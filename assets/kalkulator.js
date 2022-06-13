@@ -94,4 +94,14 @@ function performCalculation() {
     }
 
     calculator.displayNumber = result;
+
+    const history = {
+        firstNumber: calculator.firstNumber,
+        secondNumber: calculator.displayNumber,
+        operator: calculator.operator,
+        result: result
+    };
+
+    putHistory(history);
+    renderHistory();
 }
